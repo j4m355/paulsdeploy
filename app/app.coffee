@@ -20,7 +20,7 @@ START APPLICATION NOW :
 ###
 
 app.post("/deploy", (req,res)->
-	exec('git pull origin master', {cwd: "/home/james/apps/paulzo/lesson1"}, (error,stdout,stderr)->
+	exec("git pull origin master", cwd: "/home/james/apps/paulzo/lesson1", (error,stdout,stderr)->
 		console.log error
 		res.send(200))
 	)
