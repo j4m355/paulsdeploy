@@ -25,6 +25,10 @@ app.post("/deploy", (req,res)->
 		res.send(200))
 	)
 
+app.get('/', (req, res)->
+	res.render(__dirname + '/views/index.jade')
+	)
+
 
 
 
