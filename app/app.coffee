@@ -1,7 +1,7 @@
 settings = require(__dirname + '/config/config')
 _ = require('underscore')
 express = require('express')
-exec = require('child_process')
+exec = require('child_process').exec
 app = express()
 
 views = __dirname + '/views/'
