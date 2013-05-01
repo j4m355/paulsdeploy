@@ -19,7 +19,7 @@ git@github.com:j4m355/node-app-skeleton.git
 START APPLICATION NOW :
 ###
 
-app.post("/deploy", (req,res)->
+app.post("/", (req,res)->
 	exec("git pull origin master", cwd: "/home/james/apps/paulzo/lesson1", (error,stdout,stderr)->
 		console.log error
 		res.send(200))
